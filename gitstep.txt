@@ -1,13 +1,24 @@
+0. initialize repository to the git: git git init
 1. create file: nano
 2. check the status: git status
  - showing worktree
 3. add untracked file to the working stage: git add filename
+	git add . : adding all file that's in current directory
+	git add foldername: adding all file inside the folder
 4. check status: git status
 5. commit to git: git commit -m "Message"
  -m meaning easier to type message only(don't know how to get out from the editing page)
+	commiting all: git commit -am "Message"
+	warning: if there's untracke file, it can't be commited.
+	at least it should be added once
 6. finished. check status if anything missing: git status
 7. showing log in git: git log
 * going back to previous commit: git reset --hard
 * showing the difference between git commited file and workingtree file:
 	git diff
 * showing all the log details: git log -p (p meaning patch)
+* go back to the previous commit in the repository: git checkout "id"
+	id is the git commit's id
+	than you can get the previous commit version in repository as well
+	it's not deleting it's going back 
+* go to the most recent version(commit): git checkout master
