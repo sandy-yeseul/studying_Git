@@ -7,3 +7,7 @@
  -m meaning easier to type message only(don't know how to get out from the editing page)
 6. finished. check status if anything missing: git status
 7. showing log in git: git log
+* going back to previous commit: git reset --hard
+* showing the difference between git commited file and workingtree file:
+	git diff
+* showing all the log details: git log -p (p meaning patch)
