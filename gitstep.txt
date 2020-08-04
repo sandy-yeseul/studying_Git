@@ -1,0 +1,9 @@
+1. create file: nano
+2. check the status: git status
+ - showing worktree
+3. add untracked file to the working stage: git add filename
+4. check status: git status
+5. commit to git: git commit -m "Message"
+ -m meaning easier to type message only(don't know how to get out from the editing page)
+6. finished. check status if anything missing: git status
+7. showing log in git: git log
