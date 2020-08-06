@@ -22,3 +22,16 @@
 	than you can get the previous commit version in repository as well
 	it's not deleting it's going back 
 * go to the most recent version(commit): git checkout master
+
+8. connecting to remote repositroy 
+	: git remote add origin https://github.com/sandy-yeseul/studying_Git.git
+	checking if it connected well: git remote
+	checking with the showing address: git remote -v
+9. push to the remote repository
+	: git push 
+	then it shows kinda error that at first we need to initialize
+	 git push --set-upstream origin master(need to be done at first)
+	later just git push 
+10. clone: git clone  https://github.com/sandy-yeseul/studying_Git.git
+	git clone + address
+11. pull: 	
