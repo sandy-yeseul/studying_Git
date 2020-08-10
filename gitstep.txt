@@ -22,6 +22,7 @@
 	than you can get the previous commit version in repository as well
 	it's not deleting it's going back 
 * go to the most recent version(commit): git checkout master
+* cp ../b/*.patch . : copy(cp) all(.) the file that finishes like patch(*.patch)
 
 8. connecting to remote repositroy 
 	: git remote add origin https://github.com/sandy-yeseul/studying_Git.git
@@ -31,7 +32,17 @@
 	: git push 
 	then it shows kinda error that at first we need to initialize
 	 git push --set-upstream origin master(need to be done at first)
+	or you can just : git push -u origin master
 	later just git push 
 10. clone: git clone  https://github.com/sandy-yeseul/studying_Git.git
 	git clone + address
-11. pull: 	
+11. pull: git pull
+
+**how to collaborate: 
+	pull -> commit -> push
+	fetch -> git merge FETCH_HEAD -> commit -> push
+12. fetch: git fetch -> git status -> git merge origin/master(or git merge FETCH_HEAD)
+13. patch: how to contribute to open source work
+	git format-patch the_latest_version_till_you_made_change: make a file of the differences
+13-1. merging patches:
+	git am -3 -i *.patch: am(apply mailbox) -3(3 way merging) -i(interactive: asking all the time) *.patch(all the patch files)
